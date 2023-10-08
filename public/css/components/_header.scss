@@ -1,0 +1,34 @@
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  position: fixed;
+  align-items: center;
+  img{
+    margin-left: 10px;
+  }
+  ul{
+    display:flex;
+    gap: 1vw;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+    }
+  }
+  a.linkContact{
+    color: white;
+    background: mediumpurple;
+    width: 7vw;
+    height: 40px;
+    text-align: center;
+    border: 1px solid mediumpurple;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
