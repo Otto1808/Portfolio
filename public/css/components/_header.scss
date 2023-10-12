@@ -14,21 +14,29 @@ header{
     gap: 1vw;
     li{
       list-style: none;
-      a{
+      a {
         text-decoration: none;
         color: black;
+        position: relative;
+        cursor: pointer;
         font-size: 20px;
+        font-weight: bold;
+
+        &::after {
+          position: absolute;
+          bottom: - .2rem;
+          left: 0;
+          content: "";
+          width: 0;
+          height: 2px;
+          background: mediumpurple;
+          transition: all .3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
-  }
-  a.linkContact{
-    color: white;
-    background: mediumpurple;
-    width: 7vw;
-    height: 40px;
-    text-align: center;
-    border: 1px solid mediumpurple;
-    padding: 10px;
-    border-radius: 10px;
   }
 }

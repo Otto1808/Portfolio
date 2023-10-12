@@ -57,48 +57,79 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: black;
+  position: relative;
+  cursor: pointer;
   font-size: 20px;
+  font-weight: bold;
 }
-header a.linkContact {
-  color: white;
+header ul li a::after {
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 2px;
   background: mediumpurple;
-  width: 7vw;
-  height: 40px;
-  text-align: center;
-  border: 1px solid mediumpurple;
-  padding: 10px;
-  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+header ul li a:hover::after {
+  width: 100%;
 }
 
 main.home {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+main.home section {
   display: flex;
   justify-content: center;
   gap: 40px;
   height: auto;
 }
-main.home section.bg-info {
-  width: 500px;
+main.home section section.bg-info {
+  width: 50%;
   height: 50%;
 }
-main.home section.bg-info img {
+main.home section section.bg-info img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-main.home section.info {
-  width: 750px;
-  height: 500px;
+main.home section section.info {
+  width: 50%;
+  height: auto;
   display: flex;
   padding: 20px;
   flex-direction: column;
-  justify-content: space-around;
-  border: 0.5px black solid;
+  justify-content: center;
   border-radius: 10px;
-  background: linear-gradient(90deg, rgba(111, 0, 255, 0.3) 0%, rgb(255, 255, 255) 50%);
+  gap: 15%;
 }
-main.home section.info div {
+main.home section section.info h2 {
+  font-size: 50px;
+}
+main.home section section.info h2 span {
+  background: mediumpurple;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+}
+main.home section section.info p {
+  font-size: 20px;
+  width: 90%;
+  line-height: 30px;
+}
+main.home section section.info div {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 5%;
+}
+main.home section section.info div .linkContact {
+  background: mediumpurple;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
