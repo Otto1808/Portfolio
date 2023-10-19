@@ -10,6 +10,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  background: #1b1c1D;
 }
 body main {
   padding-top: 100px;
@@ -40,12 +41,14 @@ header {
   height: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 80px 20px 80px;
   position: fixed;
   align-items: center;
 }
-header img {
-  margin-left: 10px;
+header p {
+  color: #FFBD59;
+  font-size: 25px;
+  font-weight: bold;
 }
 header ul {
   display: flex;
@@ -56,7 +59,7 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   position: relative;
   cursor: pointer;
   font-size: 20px;
@@ -69,7 +72,7 @@ header ul li a::after {
   content: "";
   width: 0;
   height: 2px;
-  background: mediumpurple;
+  background: #FFBD59;
   transition: all 0.3s ease;
 }
 header ul li a:hover::after {
@@ -79,19 +82,21 @@ header ul li a:hover::after {
 main.home {
   padding-left: 50px;
   padding-right: 50px;
+  height: auto;
 }
 main.home section {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
   gap: 40px;
   height: auto;
 }
 main.home section section.bg-info {
   width: 50%;
-  height: 50%;
+  height: auto;
 }
 main.home section section.bg-info img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 10px;
 }
@@ -107,9 +112,10 @@ main.home section section.info {
 }
 main.home section section.info h2 {
   font-size: 50px;
+  color: white;
 }
 main.home section section.info h2 span {
-  background: mediumpurple;
+  background: #FFBD59;
   border-radius: 20px;
   padding: 5px;
   color: white;
@@ -118,17 +124,147 @@ main.home section section.info p {
   font-size: 20px;
   width: 90%;
   line-height: 30px;
+  color: white;
 }
 main.home section section.info div {
   display: flex;
   align-items: center;
   gap: 5%;
+  color: #FFBD59;
+}
+main.home section section.info div img {
+  background: #FFBD59;
+  border-radius: 20px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  fill: white;
 }
 main.home section section.info div .linkContact {
-  background: mediumpurple;
+  background: #FFBD59;
   padding: 15px;
   border-radius: 20px;
   font-size: 20px;
+  color: white;
+}
+
+main.contact {
+  width: 100%;
+  height: auto;
+}
+main.contact section.container {
+  display: flex;
+  padding: 30px 50px 30px 50px;
+}
+main.contact section.container section.form {
+  width: 50%;
+  height: auto;
+  background: gainsboro;
+}
+main.contact section.container section.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+main.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px 50px 50px;
+}
+main.works section.banner {
+  display: flex;
+  width: 96%;
+  border-bottom: 1px solid #FFBD59;
+  padding: 30px 50px 30px 50px;
+  justify-content: center;
+}
+main.works section.banner h2 {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+main.works section.container {
+  width: 96%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 250px;
+  gap: 3%;
+}
+main.works section.container section.card {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  align-items: flex-end;
+  background: lightgray;
+  position: relative;
+  border-radius: 20px;
+}
+main.works section.container section.card > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: all 1s ease;
+  border-radius: 20px;
+}
+main.works section.container section.card > img.open-zaap, main.works section.container section.card > img.light-zaap, main.works section.container section.card > img.light-zaap-aura {
+  opacity: 0;
+}
+main.works section.container section.card > img.light-zaap {
+  width: 30vw;
+  bottom: 15vh;
+}
+main.works section.container section.card > img.light-zaap-aura {
+  width: 60vw;
+  top: 5vh;
+}
+main.works section.container section.card:hover > img.default-zaap {
+  opacity: 0;
+}
+main.works section.container section.card:hover > img.open-zaap, main.works section.container section.card:hover img.light-zaap, main.works section.container section.card:hover img.light-zaap-aura, main.works section.container section.card:hover a.btn-img {
+  opacity: 1;
+}
+main.works section.container section.card:hover a.btn-img {
+  transform: translateY(30vh);
+}
+main.works section.container section.card:hover a.btn-img:hover {
+  transform: translateY(30vh) scale(1.1, 1.1);
+}
+main.works section.container section.card:hover > img.light-zaap {
+  animation: infiniteLoop 15s linear infinite;
+}
+main.works section.container section.card div {
+  display: flex;
+}
+main.works section.container section.card div.infoCard {
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  padding: 15px;
+}
+main.works section.container section.card div.infoCard h3 {
+  font-size: 20px;
+  width: 50%;
+  color: white;
+}
+main.works section.container section.card div.infoCard div.imgIcone {
+  width: 50%;
+  height: 30px;
+  z-index: 1000;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+main.works section.container section.card div.infoCard div.imgIcone svg {
+  width: auto;
+  height: 100%;
   color: white;
 }
 

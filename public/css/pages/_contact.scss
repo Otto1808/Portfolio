@@ -1,0 +1,22 @@
+main.contact{
+  width: 100%;
+  height: auto;
+
+  section.container{
+    display: flex;
+    padding: 30px 50px 30px 50px;
+
+    section.form{
+      width: 50%;
+      height: auto;
+      background: gainsboro;
+
+      form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+    }
+  }
+}

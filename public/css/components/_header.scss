@@ -3,11 +3,13 @@ header{
   height: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 80px 20px 80px;
   position: fixed;
   align-items: center;
-  img{
-    margin-left: 10px;
+  p{
+    color: #FFBD59;
+    font-size: 25px;
+    font-weight: bold;
   }
   ul{
     display:flex;
@@ -16,7 +18,7 @@ header{
       list-style: none;
       a {
         text-decoration: none;
-        color: black;
+        color: white;
         position: relative;
         cursor: pointer;
         font-size: 20px;
@@ -29,7 +31,7 @@ header{
           content: "";
           width: 0;
           height: 2px;
-          background: mediumpurple;
+          background: #FFBD59;
           transition: all .3s ease;
         }
 

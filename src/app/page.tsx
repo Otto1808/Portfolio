@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Bg_home from '../../public/images/bg_home.jpeg'
+import Bg_home from '../../public/images/bg_home.jpg'
 import IconeGH from '../../public/images/github.svg'
 import IconeLK from '../../public/images/linkedin.svg'
 import Link from "next/link";
@@ -9,7 +9,7 @@ export default function Home() {
     <main className="home">
       <section>
         <section className="bg-info">
-          <Image src={Bg_home} alt="Background home" width={500} height={500}/>
+          <Image src={Bg_home} alt="Background home" width={1000} height={1000}/>
         </section>
         <section className="info">
           <h2>Je suis <span>Pietro</span>,<br/> Développeur Web Junior </h2>
